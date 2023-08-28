@@ -1,6 +1,6 @@
 package homeworks.homework3;
 
-
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -19,10 +19,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String s = "anagram";
-        String t = "nagaram";
+        String s = "пушка";
+        String t = "шупка";
 
         boolean result = isAnagram(s, t);
+
+        System.out.println(result);
 
         if (result) {
             System.out.println(t + " is an anagram of " + s);
