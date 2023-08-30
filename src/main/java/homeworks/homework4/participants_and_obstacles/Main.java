@@ -28,7 +28,6 @@ public class Main {
                     } else {
                         System.out.println("Учасник " + participant.getName() + " не перестрибнув " + obstacle.getName() + " з висотою " + obstacle.getBarrierValue() +
                                 ". Він подолав лише " + participant.getPowerJump() + ". та вибуває з змагань");
-                        continue;
                     }
                 } else if (obstacle.getName() == "offRoad") {
                     if (participant.getPowerRun() > obstacle.getBarrierValue()) {
