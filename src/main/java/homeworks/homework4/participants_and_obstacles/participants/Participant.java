@@ -24,9 +24,11 @@ public class Participant {
     }
 
     public void run(){
-        System.out.println("run");
+
+        System.out.println(name + " can run");
     }
     public void jump(){
-        System.out.println("jump");
+
+        System.out.println(name + " can jump");
     }
 }
