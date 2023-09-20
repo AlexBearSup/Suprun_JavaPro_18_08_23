@@ -16,7 +16,7 @@ public class CoffeeOrderBoard {
     }
     public void deliverFirst(){
         Order firstOrder = orders.poll();
-        System.out.println("First in pullOrder is - " + firstOrder.getName() + " " + firstOrder.getNumberOrder() );
+        System.out.println("First in pull Order is : " + firstOrder.getClient() + "  " + firstOrder.getNumberOrder() );
     }
     public void deliverOnDemand(int demand){
         Order orderDemaind = null;
@@ -27,7 +27,7 @@ public class CoffeeOrderBoard {
             }
         }
         if (orderDemaind != null) {
-            System.out.println("Order on demand is - " + orderDemaind.getName() + " " + orderDemaind.getNumberOrder());
+            System.out.println("Order on demand is : " + orderDemaind.getClient() + " " + orderDemaind.getNumberOrder());
         } else {
             System.out.println("Order with number " + demand + " not found.");
         }
@@ -38,7 +38,7 @@ public class CoffeeOrderBoard {
         System.out.println("list for issue");
         while (!orders.isEmpty()) {
             Order qwe = orders.poll();
-            System.out.println(qwe.getName() + " - " + qwe.getNumberOrder());
+            System.out.println(qwe.getClient() + " - " + qwe.getNumberOrder());
         }
     }
 
