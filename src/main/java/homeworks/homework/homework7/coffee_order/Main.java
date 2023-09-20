@@ -1,5 +1,48 @@
+package java.homeworks.homework.homework7.coffee_order;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        CoffeeOrderBoard board = new CoffeeOrderBoard();
+
+        board.orderAdd(new Order("Obi-Van", 4));
+        board.orderAdd(new Order("R2D2", 4));
+        board.orderAdd(new Order("Duku", 72));
+        board.orderAdd(new Order("C3PO", 22));
+        board.orderAdd(new Order("Enakin", 70));
+        board.orderAdd(new Order("Padme", 14));
+        board.orderAdd(new Order("Yoda", 33));
+
+        System.out.println("---------------------------------");
+
+        board.deliverFirst();
+        System.out.println("---------------------------------");
+
+        board.deliverOnDemand(15);
+        System.out.println("---------------------------------");
+
+        board.draw();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }
