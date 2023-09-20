@@ -37,22 +37,24 @@ public class Main {
     }
 
 //    task 3
-    public static int[] findSum(int[] original, int target) {
-        int[] result = new int[2];
-        HashMap<Integer, Integer> requiredIndexes = new HashMap<>();
+//    public static int[] findSum(int[] original, int target) {
+//        int[] result = new int[2];
+//        HashMap<Integer, Integer> requiredIndexes = new HashMap<>();
+//
+//        for(int i =0; i < original.length; i++){
+//            int first = target - original[i];
+//            if(requiredIndexes.containsKey(first)){
+//                result[0] = requiredIndexes.get(first);
+//                result[1] = i;
+//            }else{
+//                requiredIndexes.put(original[i], i);
+//            }
+//        }
+//        System.out.println(Arrays.toString(result));
+//        return result;
+//    }
+  
 
-        for(int i =0; i < original.length; i++){
-            int first = target - original[i];
-            if(requiredIndexes.containsKey(first)){
-                result[0] = requiredIndexes.get(first);
-                result[1] = i;
-            }else{
-                requiredIndexes.put(original[i], i);
-            }
-        }
-        System.out.println(Arrays.toString(result));
-        return result;
-    }
 
 
 
